@@ -1,0 +1,16 @@
+title: Jeff_griffin1@cox.net
+description: Hhh
+template:
+  repo: jeff_griffin1@cox.net-template
+  name: jeff_griffin1@cox.net
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
